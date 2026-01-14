@@ -291,25 +291,41 @@
 </style>
 
 <script>
-  window.onload = function() {
-    setTimeout(() => {
-      document.getElementById('callModal').style.display = 'flex';
-    }, 900);
-  };
+  document.addEventListener('DOMContentLoaded', function() {
 
-  document.getElementById('callModal').addEventListener('click', function(e) {
-    if (e.target.id === 'callModal') {
-      this.style.display = 'none';
+    // Show modal
+    setTimeout(() => {
+      const modal = document.getElementById('callModal');
+      if (modal) modal.style.display = 'flex';
+    }, 900);
+
+    // Force-select elements AFTER DOM loads
+    const modal = document.getElementById('callModal');
+    const closeBtn = document.getElementById('modalClose');
+
+    // CLICKING X BUTTON
+    if (closeBtn) {
+      closeBtn.onclick = function() {
+        if (modal) modal.style.display = 'none';
+        setTimeout(() => {
+          window.location.href = 'tel:+18052153480';
+        }, 150);
+      };
     }
+
+    // CLICKING OUTSIDE MODAL
+    if (modal) {
+      modal.onclick = function(e) {
+        if (e.target.id === 'callModal') {
+          modal.style.display = 'none';
+          setTimeout(() => {
+            window.location.href = 'tel:+18052153480';
+          }, 150);
+        }
+      };
+    }
+
   });
-  document.getElementById('modalClose').onclick = function() {
-    document.getElementById('callModal').style.display = 'none';
-    // Trigger phone dialer on close
-    window.location.href = 'tel:+18052153480';
-  };
-    window.location.href = 'tel:+18052153480';
-  };
-  };
 </script>
 
 
