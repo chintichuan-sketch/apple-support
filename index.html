@@ -59,25 +59,59 @@
       margin-bottom: 30px;
     }
 
+    /* ---------- PRIMARY CALL BUTTON - more visible ---------- */
     .call-btn {
       display: inline-block;
       background-color: #0071e3;
       color: #ffffff;
       text-decoration: none;
-      padding: 12px 30px;
-      font-size: 17px;
-      font-weight: 400;
+      padding: 16px 44px;
+      font-size: 20px;
+      font-weight: 500;
       border-radius: 980px;
-      margin-bottom: 40px;
-      transition: background 0.2s;
+      margin-bottom: 30px;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 4px 12px rgba(0, 113, 227, 0.35);
+      letter-spacing: 0.3px;
+      border: 1px solid #0077ed;
     }
 
     .call-btn:hover {
       background-color: #0077ed;
+      box-shadow: 0 6px 18px rgba(0, 113, 227, 0.45);
+      transform: scale(1.02);
+    }
+
+    .call-btn:active {
+      background-color: #005bbf;
+      transform: scale(0.98);
+    }
+
+    /* ----- TOLL-FREE number (clickable) ----- */
+    .tollfree-link {
+      display: inline-block;
+      font-size: 34px;
+      font-weight: 600;
+      color: #1d1d1f;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 40px;
+      transition: background 0.15s, color 0.15s;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .tollfree-link:hover {
+      background-color: #f5f5f7;
+      color: #0071e3;
+    }
+
+    .tollfree-link:active {
+      background-color: #e8e8ed;
     }
 
     .status-container {
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     .availability {
@@ -86,7 +120,7 @@
       color: #86868b;
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
     .number {
@@ -163,7 +197,6 @@
       font-weight: 300;
     }
 
-    /* optional small note */
     .footnote {
       margin-top: 40px;
       font-size: 12px;
@@ -171,7 +204,6 @@
       padding-bottom: 20px;
     }
 
-    /* responsive */
     @media (min-width: 600px) {
       .explore-grid {
         flex-direction: row;
@@ -196,12 +228,13 @@
     <h1>Contact Apple Support</h1>
     <p class="subhead">Need help with your device? Our team is ready to assist you.</p>
 
-    <!-- updated toll-free number -->
-    <a href="tel:+18885067611" class="call-btn">📞 Call Support Now</a>
+    <!-- Primary call button — updated toll-free number -->
+    <a href="tel:+18884950672" class="call-btn">📞 Call Support Now</a>
 
     <div class="status-container">
       <div class="availability">AVAILABLE 24/7 IN THE US</div>
-      <div class="number">+1-888-506-7611</div>
+      <!-- toll-free number: clickable, updated to +1-888-495-0672 -->
+      <a href="tel:+18884950672" class="tollfree-link">+1-888-495-0672</a>
     </div>
 
     <div class="divider"></div>
